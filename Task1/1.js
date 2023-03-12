@@ -12,7 +12,7 @@
 // Советую округлить значение после расчетов, так как в некоторых случаях может получиться 
 // "длинная дробь".
 
-const tempInCelsius = prompt('Введите температуру в градусах Цельсия:');
+const tempInCelsius = Number.parseFloat(prompt('Введите температуру в градусах Цельсия:'));
 const tempInFahrenheit = CelsiusToFahrenheit(tempInCelsius);
 alert(`Цельсий: ${tempInCelsius}, Фаренгейт: ${Math.floor(tempInFahrenheit * 100) / 100}`);
 
