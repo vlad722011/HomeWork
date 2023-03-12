@@ -16,7 +16,7 @@ const tempInCelsius = prompt('Введите температуру в град�
 const tempInFahrenheit = CelsiusToFahrenheit(tempInCelsius);
 alert(`Цельсий: ${tempInCelsius}, Фаренгейт: ${Math.floor(tempInFahrenheit * 100) / 100}`);
 
-function CelsiusToFahrenheit(tempCelsius) {
+function celsiusToFahrenheit(tempCelsius) {
     const tempFahrenheit = (tempCelsius * (9 / 5)) + 32;
     return tempFahrenheit;
 }
